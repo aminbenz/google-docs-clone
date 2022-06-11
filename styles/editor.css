@@ -1,0 +1,76 @@
+@media print {
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+  }
+
+  h1 {
+    /* break-before: always; */
+  }
+  table,
+  img,
+  svg {
+    break-inside: avoid;
+  }
+  img {
+    border-radius: 0.1in;
+  }
+  header,
+  footer,
+  aside,
+  nav,
+  form,
+  iframe,
+  .menu,
+  .hero,
+  .adslot {
+    display: none !important;
+  }
+
+  .rdw-editor-toolbar {
+    display: none !important;
+  }
+}
+
+/* end print */
+
+.tox-tinymce {
+  border: none !important;
+}
+
+.tox-editor-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.editor-wrapper .tox-sidebar-wrap {
+  max-width: 8in !important;
+  max-height: 11in !important;
+  margin: 20px auto !important;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  border: 1px solid #8080802e;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  background-color: #fff;
+  color: #000;
+
+  /* transform: scale(0.9); */
+  /* margin: 0px auto !important; */
+}
+
+.tox .tox-tinymce .tox-tinymce--toolbar-sticky-on {
+  z-index: 20;
+}
+
+p._04xlpA.direction-ltr.align-start.para-style-body {
+  margin: 0.5rem 0 !important;
+}
+
+.tox-editor-container {
+  z-index: 11;
+}
